@@ -1,0 +1,27 @@
+{
+  "name": "pakemon_web_ui",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notnullgames/pakemon_web_ui.git"
+  },
+  "keywords": [],
+  "author": "David Konsumer <konsumer@jetboystudio.com> (https://konsumer.js.org/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/notnullgames/pakemon_web_ui/issues"
+  },
+  "homepage": "https://github.com/notnullgames/pakemon_web_ui#readme",
+  "devDependencies": {
+    "vite": "^3.1.8"
+  },
+  "dependencies": {
+    "pixi.js": "^6.5.6"
+  }
+}
