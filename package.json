@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build && cd dist && zip -r ../pakemon-webui.zip ."
   },
   "dependencies": {
     "@inlet/react-pixi": "^6.8.0",
