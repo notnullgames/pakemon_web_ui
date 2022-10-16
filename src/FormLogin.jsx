@@ -34,7 +34,7 @@ function FormLogin () {
   }
 
   return (
-    <div style={{ background: '#000 url(/bg.webp) no-repeat', backgroundSize: 'cover' }} className='h-screen overflow-hidden flex items-center justify-center'>
+    <div style={{ background: '#000 url(./bg.webp) no-repeat', backgroundSize: 'cover' }} className='h-screen overflow-hidden flex items-center justify-center'>
       <form onSubmit={onSubmit}>
         <div className='p-2 flex gap-2  items-center justify-center'>
           <div className='text-white' style={{ textShadow: '2px 2px 4px black' }}>

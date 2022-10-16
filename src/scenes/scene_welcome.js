@@ -9,7 +9,7 @@ export default class SceneWelcome extends Scene {
     this.showNext = true
     this.time = 0
 
-    this.bunny = PIXI.Sprite.from('/bunny.png')
+    this.bunny = PIXI.Sprite.from('./bunny.png')
     this.bunny.scale.set(2, 2)
     this.bunny.anchor.set(0.5, 0.5)
     this.bunny.x = 160
@@ -22,7 +22,7 @@ export default class SceneWelcome extends Scene {
       this.stars.drawRect(Math.floor(Math.random() * 320), Math.floor(Math.random() * 240), 1, 1)
     }
 
-    this.textBg = new PIXI.NineSlicePlane(PIXI.Texture.from('/dialog.png'), 20, 20, 20, 20)
+    this.textBg = new PIXI.NineSlicePlane(PIXI.Texture.from('./dialog.png'), 20, 20, 20, 20)
     this.textBg.width = 300
     this.textBg.x = 10
     this.text = new PIXI.Text('', { wordWrap: true, wordWrapWidth: 280, fontSize: 12, fill: 0xffffffff })
@@ -34,7 +34,7 @@ I'm not really a bunny in space.
 
 Remember: only hack systems you actually have explicit permission to mess with. They are real, and you definitely should not break the law.`)
 
-    this.buttonA = PIXI.Sprite.from('/button_A.png')
+    this.buttonA = PIXI.Sprite.from('./button_A.png')
     this.buttonA.y = this.textBg.height - 15
     this.buttonA.x = 280
     this.textBg.addChild(this.buttonA)
