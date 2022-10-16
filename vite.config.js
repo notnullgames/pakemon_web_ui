@@ -7,5 +7,6 @@ export default defineConfig({
   plugins: [
     react(),
     WindiCSS()
-  ]
+  ],
+  base: '/pakemon_web_ui/'
 })
