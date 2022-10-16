@@ -22,4 +22,24 @@ Then point it at an instance of bettercap that has the `api.rest` module running
 sudo bettercap -eval 'https-ui enable'
 ```
 
-The default will be `https://HOSTNAME:8083/api`
+On my ddevice, I made my `/lib/systemd/system/bettercap.service` look like this, to auto-start it:
+
+```service
+[Unit]
+Description=bettercap api.rest service.
+Documentation=https://bettercap.org
+Wants=network.target
+After=network.target
+
+[Service]
+Type=simple
+PermissionsStartOnly=true
+ExecStart=/usr/bin/bettercap -no-colors -eval 'set events.stream.output /var/log/bettercap.log;https-ui enable'
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+```
+
+The default URL will be `https://HOSTNAME:8083/api`

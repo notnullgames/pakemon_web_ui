@@ -29,10 +29,6 @@ export default class SceneWelcome extends Scene {
     this.text.x = 10
     this.text.y = 10
     this.textBg.addChild(this.text)
-    this.setText(`Hi, my name is H4x0r.
-I'm not really a bunny in space.
-
-Remember: only hack systems you actually have explicit permission to mess with. They are real, and you definitely should not break the law.`)
 
     this.buttonA = PIXI.Sprite.from('./button_A.png')
     this.buttonA.y = this.textBg.height - 15
@@ -42,6 +38,11 @@ Remember: only hack systems you actually have explicit permission to mess with. 
     stage.addChild(this.stars)
     stage.addChild(this.bunny)
     stage.addChild(this.textBg)
+
+    this.setText(`Hi, my name is H4x0r.
+I'm not really a bunny in space.
+
+Remember: only hack systems you actually have explicit permission to mess with. They are real, and you definitely should not break the law.`)
   }
 
   setText (text) {
