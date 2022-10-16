@@ -22,7 +22,7 @@ Then point it at an instance of bettercap that has the `api.rest` module running
 sudo bettercap -eval 'https-ui enable'
 ```
 
-On my ddevice, I made my `/lib/systemd/system/bettercap.service` look like this, to auto-start it:
+On my device, I made my `/lib/systemd/system/bettercap.service` look like this, to auto-start it:
 
 ```service
 [Unit]
