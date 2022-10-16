@@ -31,7 +31,6 @@ export default class SceneWelcome extends Scene {
     this.textBg.addChild(this.text)
 
     this.buttonA = PIXI.Sprite.from('./button_A.png')
-    this.buttonA.y = this.textBg.height - 15
     this.buttonA.x = 280
     this.textBg.addChild(this.buttonA)
 
@@ -49,6 +48,7 @@ Remember: only hack systems you actually have explicit permission to mess with. 
     this.text.text = text
     this.textBg.height = this.text.height + 20
     this.textBg.y = 240 - this.textBg.height - 20
+    this.buttonA.y = this.textBg.height - 15
   }
 
   update (delta) {
