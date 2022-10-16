@@ -12,8 +12,8 @@ export function PakemonProvider ({ children }) {
         fetch(`${host}/session`, { headers: { Authorization: `Basic ${auth}` } })
           .then(r => r.json()).then(setSession)
           .catch(e => {
-            window.localStorage.removeItem('auth')
-            setAuth(false)
+            // window.localStorage.removeItem('auth')
+            // setAuth(false)
           })
       }
     }, 1000)
