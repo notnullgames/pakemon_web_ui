@@ -43,3 +43,8 @@ WantedBy=multi-user.target
 ```
 
 The default URL will be `https://HOSTNAME:8083/api`
+
+## thanks
+
+- [pipoya](https://pipoya.itch.io/pipoya-free-rpg-character-sprites-32x32)
+- [kenney](https://www.kenney.nl/assets/tiny-dungeon)
